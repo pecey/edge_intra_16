@@ -9,6 +9,7 @@
     }
     body{
         position: relative;
+        overflow-y:hidden;
     }
     body>div:first-child{ width:100%; }
     .block{ height:100vh; }
@@ -46,6 +47,10 @@
     #infocus>.buffer{ background-image: url('../img/infocus_bck.jpg'); }
     #newron>.buffer{ background-image: url('../img/newron_bck.jpg'); }
     #bridge>.buffer{ background-image: url('../img/bridge_bck.jpg'); }
+     #contacts>.buffer{background-image: url('../img/contacts_bck.jpg');}
+    #contacts .overlay{
+            background: rgba(0,0,0,0.5);
+    }
     #coding .overlay,
     #foodforfun .overlay,
     #bridge .overlay{
@@ -351,9 +356,59 @@
         height:50px;
         width:50px;
         border-radius: 50%;
-        position: fixed;
+        position: absolute;
         top:30px;
         left:40px;
-        z-index: 3;
-        box-shadow: 5px 5px 10px #212121;
+        box-shadow:1px 1px 1px #222;
     }
+
+    #gx-logo{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 30px;
+        right: 40px;
+    }
+
+
+/*Contacts*/
+.contact-block-contact-1{
+    text-align: left;
+}
+.contact-block-contact-1 i{
+    margin-left: 10px;
+}
+.contact-block-contact-2{
+    text-align: right;
+}
+.contact-block-contact-2 i{
+    margin-right: 10px;
+}
+.contact-block-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size:1.5em;
+    font-family: 'Raleway';
+    background: #eee;
+    margin-bottom: 10px;
+}
+.central-contact-block-title{
+    background: #222;
+    color: white;
+}
+#contacts-block .row .col-md-3{
+    background: white;
+    padding: 20px;
+    font-family: 'Lato';
+    box-shadow: 1px 1px 1px 1px #060606 inset;
+}
+.contact-block-contact-name i.fa-facebook{
+    color: #425F9C;
+}
+.contact-block-contact-name{
+    font-family: 'Raleway';
+    text-transform: uppercase;
+}
+.contact-block-contact-phone{
+    font-size:0.85em;
+}
